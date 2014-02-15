@@ -37,6 +37,11 @@ function set_mysql {
     echo "Drupal7 db pass : $DRU_DB"
 }
 
+function set_drupal {
+    chmod 777 /var/www/htdocs/web/sites/default/files
+    chmod 777 /var/www/htdocs/web/sites/default/settings.php
+}
+
 # Settings of apps
 set_httpd
 echo "httpd is set"
@@ -47,6 +52,9 @@ echo "mysql is set"
 # Run apps
 httpd &
 echo "httpd is running"
+
+# Drupal settings
+set_drupal
 
 #/usr/share/mysql/mysql.server start
 #echo "mysql is running"
