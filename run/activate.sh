@@ -14,6 +14,8 @@ echo
 # php
 # mysql
 
+DRU_DB="d7"
+
 function set_httpd {
     echo "Settings in file httpd.conf "
     # allow mod_php
@@ -27,6 +29,12 @@ function set_mysql {
     echo "Setting mysql rights"
     mysql_install_db > /dev/null
     chown -R mysql:mysql /var/lib/mysql
+    mysqladmin -u root create $DRU_DB
+
+    mysql -u root -e "CREATE DATABASE $DRU_DB; GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, INDEX,ALTER ON $DRU_DB.* TO $DRU_DB@localhost IDENTIFIED BY $DRU_DB; FLUSH PRIVILEGES;"
+
+    echo "Drupal7 db      : $DRU_DB"
+    echo "Drupal7 db pass : $DRU_DB"
 }
 
 # Settings of apps
@@ -43,6 +51,6 @@ echo "httpd is running"
 /usr/share/mysql/mysql.server start
 echo "mysql is running"
 
-firefox http://localhost/
+firefox http://localhost/ &
 
 echo "There's nothing more to say"
