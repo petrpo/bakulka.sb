@@ -22,11 +22,20 @@ function set_httpd {
 
 function set_mysql {
     echo "Setting mysql rights"
-    # chown -R mysql:mysql /var/lib/mysql
+    mysql_install_db
+    chown -R mysql:mysql /var/lib/mysql
 }
 
 # Setting in httpd 
 set_httpd
 echo "https is set"
 
+set_mysql
+echo "mysql is set"
 
+# Run apps
+httpd &
+echo "httpd is running"
+
+/usr/share/mysql/mysql.server start
+echo "mysql is running"
