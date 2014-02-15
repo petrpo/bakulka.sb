@@ -18,8 +18,8 @@ function set_httpd {
     echo "Settings in file httpd.conf "
     # allow mod_php
     sed -i 's/\#Include\ \/etc\/httpd\/mod_php.conf/Include\ \/etc\/httpd\/mod_php.conf/g' /etc/httpd/httpd.conf
-#    echo "AddHandler application/x-httpd-php .php .html -html" >> /etc/httpd/httpd.conf
     sed -i 's/\#ServerName\ www.example.com:80/ServerName\ 127.0.0.1/' /etc/httpd/httpd.conf
+    echo "AddHandler application/x-httpd-php .php .html -html" >> /etc/httpd/httpd.conf
 }
 
 function set_mysql {
@@ -41,5 +41,7 @@ echo "httpd is running"
 
 /usr/share/mysql/mysql.server start
 echo "mysql is running"
+
+firefox http://localhost/
 
 echo "There's nothing more to say"
