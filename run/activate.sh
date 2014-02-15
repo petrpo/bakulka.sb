@@ -23,6 +23,7 @@ function set_httpd {
     sed -i 's/\#ServerName\ www.example.com:80/ServerName\ 127.0.0.1/' /etc/httpd/httpd.conf
     sed -i 's/Options\ Indexes\ FollowSymLinks/Options\ -Indexes\ +FollowSymLinks/' /etc/httpd/httpd.conf
     echo "AddHandler application/x-httpd-php .php .html -html" >> /etc/httpd/httpd.conf
+    echo "DirectoryIndex index.php index.html" >> /etc/httpd/httpd.conf
 }
 
 function set_mysql {
