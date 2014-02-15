@@ -1,4 +1,5 @@
-bakulka.sb
+Bakulka.sb
 ==========
 
-module for slax
+module for slax (deps are apache, php, mysql)
+
