@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# We put here init script that initiates module
+# This script sets neccesary apps for bakulka
 
 echo "Hello World. Here we are !!"
 
