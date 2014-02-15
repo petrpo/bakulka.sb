@@ -31,10 +31,9 @@ function set_mysql {
     mysql_install_db > /dev/null
     chown -R mysql:mysql /var/lib/mysql
     /usr/share/mysql/mysql.server start > /dev/null
-    mysql -u root -e "CREATE DATABASE $DRU_DB; GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, INDEX,ALTER ON '$DRU_DB'.* TO '$DRU_DB'@localhost IDENTIFIED BY '$DRU_DB'; FLUSH PRIVILEGES;"
-
     echo "Drupal7 db      : $DRU_DB"
     echo "Drupal7 db pass : $DRU_DB"
+    mysql -u root -e "CREATE DATABASE $DRU_DB; GRANT ALL PRIVILEGES ON '$DRU_DB'.* TO '$DRU_DB'@localhost; FLUSH PRIVILEGES;"
 }
 
 function set_drupal {
