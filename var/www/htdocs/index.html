@@ -1,0 +1,26 @@
+<html>
+<body><h1>It works!</h1>
+<p>This is the default web page of JBOX server.</p>
+
+<?php
+
+?>
+<li><a href="http://localhost/">localhost<a/>
+<li><a href="http://localhost/pi.php">php info</a>
+<li><a href="http://localhost/mysql.php">mysql info</a>
+
+<?php
+
+$APA_VER=shell_exec("apachectl -v | grep version");
+$PHP_VER=shell_exec("php -v | grep buil");
+$MYS_VER=shell_exec("mysql -V");
+
+echo "<br>";
+echo "<br>";
+echo "$APA_VER<br>";
+echo "$PHP_VER<br>";
+echo "$MYS_VER<br>";
+
+?>
+
+</body></html>
