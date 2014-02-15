@@ -30,6 +30,7 @@ function set_mysql {
     echo "Setting mysql rights"
     mysql_install_db > /dev/null
     chown -R mysql:mysql /var/lib/mysql
+    /usr/share/mysql/mysql.server start > /dev/null
     mysqladmin -u root create $DRU_DB
 
     mysql -u root -e "CREATE DATABASE $DRU_DB; GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, INDEX,ALTER ON '$DRU_DB'.* TO '$DRU_DB'@localhost IDENTIFIED BY '$DRU_DB'; FLUSH PRIVILEGES;"
@@ -49,8 +50,8 @@ echo "mysql is set"
 httpd &
 echo "httpd is running"
 
-/usr/share/mysql/mysql.server start
-echo "mysql is running"
+#/usr/share/mysql/mysql.server start
+#echo "mysql is running"
 
 firefox http://localhost/ &
 
