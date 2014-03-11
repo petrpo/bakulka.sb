@@ -58,6 +58,6 @@ set_drupal
 #/usr/share/mysql/mysql.server start
 #echo "mysql is running"
 
-firefox http://localhost/ &
+firefox http://localhost/menu-side/ &
 
 echo "There's nothing more to say"
