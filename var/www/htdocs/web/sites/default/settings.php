@@ -210,7 +210,17 @@
  *   );
  * @endcode
  */
-$databases = array();
+$databases = array (
+  'default' => 
+  array (
+    'default' => 
+    array (
+      'database' => 'sites/default/files/.ht.sqlite',
+      'driver' => 'sqlite',
+      'prefix' => '',
+    ),
+  ),
+);
 
 /**
  * Access control for update.php script.
@@ -242,7 +252,7 @@ $update_free_access = FALSE;
  *   $drupal_hash_salt = file_get_contents('/home/example/salt.txt');
  *
  */
-$drupal_hash_salt = '';
+$drupal_hash_salt = 'ZaKhqEawAxulGd4-fDxbmpvzRw9oGftc1LbjkdGVvSg';
 
 /**
  * Base URL (optional).
