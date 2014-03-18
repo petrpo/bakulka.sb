@@ -8,13 +8,13 @@
 <!-- Based on a template by Ben Meadowcroft, see http://www.benmeadowcroft.com/webdev/  for more info-->
 <title>My Amazing template site</title>
 
-  <link href="style3.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
 
 </head>
 <body>
 
 <div class="title">
-<h1>Jbox - local settings</h1>
+<h1>Welcome at Jbox </h1>
 </div>
 
 <!--
@@ -23,14 +23,9 @@ from : http://www.phpro.org/tutorials/Introduction-to-PHP-templating.html
 
 <!-- Begin Dynamic Content -->
 <div class="Content">
-<p>This is the template layout of we use in this tutorial. All the code belongs in this area
-for the Dynamic Content. Below is some dummy text in latin to fill it out. It is left as a  task
-for the user to translate it.
+<h2>Local settings and reading data</h2>
+<p>Choose in menu your precerencies
 </p>
-<h2>Dummy text</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi </p>
-
 </div>
 <!-- End Dynamic Content -->
 
@@ -55,16 +50,18 @@ for the user to translate it.
 </ul>
 
   <div class="other">
-    <p><a href="http://dispecink.kraftel.eu">dispecink 01</a></li></p>
-    <p><a href="http://dispecink02.kraftel.eu">dispecink 02</a></li></p>
-    <br />
-    <p><a href="http://kraftel.eu">Kraftel web</a></p>
+  	<p><a href="http://dispecink.kraftel.eu">dispecink 1</a></p>
+  	<p><a href="http://dispecink2.kraftel.eu">dispecink 2</a></p>
+  	<p>at <a href="http://kraftel.eu">Kraftel</a></p>
   </div>
 
 </div>
 <!-- End sidebar Content -->
 
-  <?php include("footer.php"); ?>
-
+    <div id="footer">
+	<?php include("footer.php"); ?>
+    </div>
 </body>
+
 </html>
+
