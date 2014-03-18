@@ -47,6 +47,9 @@ for the user to translate it.
 <!--<li><a href="<?php echo htmlentities($_SERVER['PHP_SELF']);?>?page=page4">about Jbox</a></li>
 
 <li>&nbsp;</li>
+<li><a href="http://dispecink.kraftel.eu">dispecink 01</a></li>
+<li><a href="http://dispecink02.kraftel.eu">dispecink 02</a></li>
+<br />
 <li><a href="http://kraftel.eu">Kraftel web</a></li>
 
 <li>&nbsp;</li>
