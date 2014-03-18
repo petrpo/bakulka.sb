@@ -26,7 +26,7 @@
 	<li>Needs very low power to work</li>
 	<li>Can run on batteries in places without electricity</li>
 	<li>Can run on batteries almost year (frequent period of reading data can consume your battery earlier !! )</li>
-	<li>Very efficent</li>
+	<li>Very efficient</li>
     </div>
 
 
