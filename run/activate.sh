@@ -40,6 +40,7 @@ function set_mysql {
 
 function set_drupal {
     chmod 777 /var/www/htdocs/web/sites/default/files
+    chmod 777 /var/www/htdocs/web/sites/default/files/.ht.sqlite
     chmod 777 /var/www/htdocs/web/sites/default/settings.php
 }
 
