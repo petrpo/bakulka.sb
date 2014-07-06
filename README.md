@@ -1,9 +1,25 @@
 Bakulka.sb
 ==========
 
-module for Slax (dependencies are apache, php, mysql)
-- firefox boots into the localhost web page
+Slax custom module
+- dependency modules : apache, php, mysql
+- custom script for this module is in /run/activate.sh
+
+Description:
+- It finaly runs firefox on localhost webpage redy to configure Jbox localy
+
+
+Backup:
 
 notes:
-- backup mysql db: mysqldump db_name > db-in-file.sql
-- import mysql db: mysql -u username -p db_name < db-in-file.sql
+- backup mysql db: mysqldump db-name > db-in-file.sql
+- import mysql db: mysql -u username -p db-name < db-in-file.sql
+
+Description for USB Slax:
+- custom modules/packages in directory : /slax/modules
+
+Desription for running Slax with Apache, PHP, mysql
+- Apache and PHP needs files in directory : /var/www/htdocs
+
+rt-init buildscript:
+- gets zipped github repository and builds module .sb with
