@@ -12,7 +12,7 @@
   
   <body>
     <div id="content">
-        <h1>About GSM box</h1>
+        <h1>About Jbox (description)</h1>
         <br /> 
 	<h2>GSM Box description :</h2>
 	<li>Small box with GSM connection running on batteries (SIM card and batteries are not included in package).</li>
@@ -23,9 +23,8 @@
  
 	<li>Very light weight if you compare it on the market</li>
 	<li>The price is very reliable</li>
-	<li>Needs very low power to work</li>
-	<li>Can run on batteries in places without electricity</li>
-	<li>Can run on batteries almost year (frequent period of reading data can consume your battery earlier !! )</li>
+	<li>Very low power consuption. It just need battery</li>
+	<li>Almost year on batteries (depends on period of GSM transfers)</li>
 	<li>Very efficient</li>
     </div>
 
