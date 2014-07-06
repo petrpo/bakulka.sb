@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# This script sets neccesary apps for run bakulka
+# This script sets a few things that dependency modules can run without errors
+# 2014-06-06 light modifications of description
 # 2014-02-14 first init
 
 echo "Hello World. Let's have a fun !!"
@@ -26,12 +27,12 @@ function set_httpd {
     sed -i 's/Options\ Indexes\ FollowSymLinks/Options\ -Indexes\ +FollowSymLinks/' /etc/httpd/httpd.conf
     echo "AddHandler application/x-httpd-php .php .html -html" >> /etc/httpd/httpd.conf
     echo "DirectoryIndex index.php index.html" >> /etc/httpd/httpd.conf
-    sed -i 's/<include\ ignore_missing=\"yes\"\ deprecated=\"yes\">\~\/.fonts.conf\<\/include>//g' /etc/fonts/conf.d/50-user.conf
+    # sed -i 's/<include\ ignore_missing=\"yes\"\ deprecated=\"yes\">\~\/.fonts.conf\<\/include>//g' /etc/fonts/conf.d/50-user.conf
     sed -i '/.fonts.conf<include/d' /etc/fonts/conf.d/50-user.conf
 }
 
 function set_mysql {
-    echo "Setting mysql rights"
+    echo "Setting mysql rights to be able to work"
     mysql_install_db > /dev/null
     chown -R mysql:mysql /var/lib/mysql
     /usr/share/mysql/mysql.server start > /dev/null
@@ -41,6 +42,7 @@ function set_mysql {
 }
 
 function set_drupal {
+    # we will see if Drupal can be used in the future
     chmod 777 /var/www/htdocs/web/sites/default/files
     chmod 777 /var/www/htdocs/web/sites/default/files/.ht.sqlite
     chmod 777 /var/www/htdocs/web/sites/default/settings.php
@@ -65,4 +67,4 @@ set_drupal
 
 firefox http://localhost/menu-side/ &
 
-echo "There's nothing more to say"
+echo "There're all things done for this time."
