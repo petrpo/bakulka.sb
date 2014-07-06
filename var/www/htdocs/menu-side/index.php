@@ -14,7 +14,7 @@
 <body>
 
 <div class="title">
-<h1>Welcome at Jbox </h1>
+<h1>Welcome at Jbox configuration</h1>
 </div>
 
 <!--
