@@ -8,6 +8,8 @@ Slax custom module
 Description:
 - It finaly runs firefox on localhost webpage redy to configure Jbox localy
 
+Define:
+- 2 dns names for dispatching servers
 
 Backup:
 
