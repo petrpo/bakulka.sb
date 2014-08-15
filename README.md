@@ -17,9 +17,9 @@ Steps how to prepare Slax custom module
 
 
 
-## INSIDE of Slax ##
+# INSIDE of Slax #
 
-# Buildscript for module rt-init #
+## Buildscript for module rt-init ##
 
 * There are couple of templates in docs directory
 
@@ -67,16 +67,18 @@ DEFAULT web
 TEST webs
 
 <code>/var/www/htdocs/menu-top/</code>
+
 <code>/var/www/htdocs/www/ - Drupal with sqlite </code>
+
 <code>/var/www/htdocs/menu/</code>
 
-# Next steps
+## Next steps
 
 - to get module working on usb key
 
-For future we can try
+## For future we can try
 
-Notes:
+# Notes:
 
 - backup mysql db: mysqldump db-name > db-in-file.sql
 - import mysql db: mysql -u username -p db-name < db-in-file.sql
