@@ -3,15 +3,15 @@ README of custom Slax module rt-init
 
 Steps how to prepare Slax custom module
 
-## 1.process ##
+### 1.process ###
 
 - module changes in git repository (gihub.com)
  
-## 2.process ##
+### 2.process ###
 
 - module building (activation of update inside Slax, building somewhere on Slax server)
 
-## 3.process ##
+### 3.process ###
 
 - module activation in Slax
 
@@ -49,22 +49,28 @@ slax buildscript update rt-init.SlaxBuild
 slax activate rt-init
 </code>
 
-*Slax modules has boot script
+
+# INSIDE of module (in git) #
+
+* Slax modules has boot script
 
 <code>/root/activate.sh</code>
 
 - it boots when module is activated in Slax
+
 - it sets PHP options, Apache Options & directory permissions
+
 - it creates mysql DB (d7:d7) for future needs 
+
 - it finaly runs Firefox on http://localhost/menu-side/
 
-# Directory structure (apache)
+## Directory structure (apache) ##
 
-DEFAULT web
+### DEFAULT web ###
 
 <code>/var/www/htdocs/menu-side/</code>
 
-TEST webs
+### TEST webs ###
 
 <code>/var/www/htdocs/menu-top/</code>
 
@@ -72,13 +78,13 @@ TEST webs
 
 <code>/var/www/htdocs/menu/</code>
 
-## Next steps
+### Next steps ###
 
 - to get module working on usb key
 
-## For future we can try
+### For future we can try ###
 
-# Notes:
+### Notes: ###
 
 - backup mysql db: mysqldump db-name > db-in-file.sql
 - import mysql db: mysql -u username -p db-name < db-in-file.sql
