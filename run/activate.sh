@@ -28,7 +28,7 @@ function set_httpd {
     echo "AddHandler application/x-httpd-php .php .html -html" >> /etc/httpd/httpd.conf
     echo "DirectoryIndex index.php index.html" >> /etc/httpd/httpd.conf
     # sed -i 's/<include\ ignore_missing=\"yes\"\ deprecated=\"yes\">\~\/.fonts.conf\<\/include>//g' /etc/fonts/conf.d/50-user.conf
-    sed -i '/.fonts.conf<include/d' /etc/fonts/conf.d/50-user.conf
+    sed -i '/.fonts.conf<\/include/d' /etc/fonts/conf.d/50-user.conf
 }
 
 function set_mysql {
