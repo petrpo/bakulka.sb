@@ -19,9 +19,9 @@ Steps how to prepare Slax custom module
 
 ## INSIDE of Slax ##
 
-Buildscript for module rt-init
+# Buildscript for module rt-init #
 
-# There are couple of templates in docs directory
+* There are couple of templates in docs directory
 
 * script can set dependencies 
 
