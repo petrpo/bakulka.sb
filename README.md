@@ -1,13 +1,22 @@
 Bakulka.sb
 ==========
 
-Slax custom module
+Script which run when you activate module
+- /root/activate.sh
+
+Slax apache directory
+- /var/www/htdocs
+
+this Slax custom module needs
 - dependency modules : apache, php, mysql
-- custom script for this module is in /run/activate.sh
+- custom script for this module is in /run/activate.sh, it runs firefox on localhost with 
+
 
 Description:
-- It finaly runs firefox on localhost webpage redy to configure Jbox localy
+- scriptIt finaly runs firefox on localhost webpage redy to configure Jbox localy
 
+Define:
+- 2 dns names for dispatching servers
 
 Backup:
 
