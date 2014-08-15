@@ -17,6 +17,7 @@ echo
 
 DRU_DB="d7"
 
+# Fnc sets php and Options for apache 
 function set_httpd {
     echo "Settings in file httpd.conf "
     # allow mod_php
@@ -31,6 +32,8 @@ function set_httpd {
     sed -i '/.fonts.conf<include/d' /etc/fonts/conf.d/50-user.conf
 }
 
+# Fnc creates mysql db = d7:d7 (same pass) and 
+#     gives right perrmisions to mysql
 function set_mysql {
     echo "Setting mysql rights to be able to work"
     mysql_install_db > /dev/null
@@ -41,6 +44,7 @@ function set_mysql {
     mysql -u root -e "CREATE DATABASE $DRU_DB; GRANT ALL PRIVILEGES ON $DRU_DB.* TO $DRU_DB@localhost; FLUSH PRIVILEGES;"
 }
 
+# Fnc sets right to dir for Drupal that runs under sqlite db
 function set_drupal {
     # we will see if Drupal can be used in the future
     chmod 777 /var/www/htdocs/web/sites/default/files
@@ -55,16 +59,18 @@ echo "httpd is set"
 set_mysql
 echo "mysql is set"
 
-# Run apps
+# GO GO Apache !!
 httpd &
 echo "httpd is running"
 
 # Drupal settings
 set_drupal
 
+# Uncomment and mysql runs
 #/usr/share/mysql/mysql.server start
 #echo "mysql is running"
 
+# GO GO Firefox on localhost/menu-side/
 firefox http://localhost/menu-side/ &
 
 echo "There're all things done for this time."
