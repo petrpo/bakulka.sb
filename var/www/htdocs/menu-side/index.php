@@ -6,7 +6,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <!-- Based on a template by Ben Meadowcroft, see http://www.benmeadowcroft.com/webdev/  for more info-->
-<title>My Amazing template site</title>
+<title>Web site for local configuration</title>
 
   <link href="style.css" rel="stylesheet">
 
