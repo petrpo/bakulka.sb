@@ -1,19 +1,21 @@
-README of custom Slax module rt-init 
+Custom Slax module (rt-init) README
 ====================================
 
 Steps how to prepare Slax custom module
 
-### 1.process ###
+### 1.process - module changes ###
 
-- module changes in git repository (gihub.com)
- 
-### 2.process ###
+- changes are placed in git repository http://github.com/petrpo/bakulka.sb/
 
-- module building (activation of update inside Slax, building somewhere on Slax server)
+### 2.process - module building ###
 
-### 3.process ###
+- can be activated inside of Slax in terminal
+- email notification comes when the module is built via Slax server
 
-- module activation in Slax
+### 3.process - module activation ###
+
+- module can be activated inside of Slax or adding it on USB to dir /slax/modules
+
 
 
 
