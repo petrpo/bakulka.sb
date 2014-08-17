@@ -8,8 +8,9 @@ rm Plocha/Soft*.desktop Plocha/User*.desktop > /dev/null 2>/dev/null
 rm Desktop/Soft*.desktop Desktop/User*.desktop > /dev/null 2>/dev/null
 
 # change permission of new desktop icon to refresh Desktop
-chmod 600 Plocha/N*.desktop > /dev/null
-chmod 600 Desktop/G*.desktop > /dev/null
+#chmod 600 Plocha/N*.desktop > /dev/null 2>/dev/null
+#chmod 600 Desktop/G*.desktop > /dev/null 2>/dev/null
+chmod 600 Desktop/*.desktop > /dev/null 2>/dev/null
 
 exit
 
