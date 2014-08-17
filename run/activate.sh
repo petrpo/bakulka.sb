@@ -4,8 +4,8 @@
 # 2014-02-14 first init
 
 # delete icons from Desktop
-rm Plocha/Soft*.desktop Plocha/User*.desktop > /dev/null
-rm Desktop/Soft*.desktop Desktop/User*.desktop > /dev/null
+rm Plocha/Soft*.desktop Plocha/User*.desktop > /dev/null 2>/dev/null
+rm Desktop/Soft*.desktop Desktop/User*.desktop > /dev/null 2>/dev/null
 
 # change permission of new desktop icon to refresh Desktop
 chmod 600 Plocha/N*.desktop > /dev/null
