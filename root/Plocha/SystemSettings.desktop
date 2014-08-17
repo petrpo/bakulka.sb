@@ -2,9 +2,9 @@
 Categories=Settings;
 Comment[cs]=
 Comment=
-Exec=/root/activate.sh
-GenericName[cs]=Nastavení systému
-GenericName=Nastavení systému
+Exec=/root/bin/activate.sh
+GenericName[cs]=Nastaven�
+GenericName=Nastaven�
 GenericName[ar]=إعدادات النظام
 GenericName[ast]=Preferencies del sistema
 GenericName[be@latin]=Systemnyja nałady
