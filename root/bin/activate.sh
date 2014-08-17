@@ -39,7 +39,7 @@ function set_mysql {
     /usr/share/mysql/mysql.server start > /dev/null
     echo "Drupal7 db      : $DRU_DB"
     echo "Drupal7 db pass : $DRU_DB"
-    if [ ! -d /var/lob/mysql/d7 ] ; then
+    if [ ! -d /var/lib/mysql/d7 ] ; then
         mysql -u root -e "CREATE DATABASE $DRU_DB; GRANT ALL PRIVILEGES ON $DRU_DB.* TO $DRU_DB@localhost; FLUSH PRIVILEGES;"
         echo "Mysql db $DRU_DB is created"
         echo
