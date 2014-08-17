@@ -52,6 +52,11 @@ function set_drupal {
     chmod 777 /var/www/htdocs/web/sites/default/settings.php
 }
 
+chmod 600 Plocha/N*.desktop
+chmod 600 Desktop/G*.desktop
+
+exit
+
 # Settings of apps
 set_httpd
 echo "httpd is set"
