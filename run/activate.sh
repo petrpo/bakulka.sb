@@ -6,6 +6,8 @@
 # delete icons from Desktop
 rm Plocha/Soft*.desktop
 rm Plocha/User*.desktop
+rm Desktop/Soft*.desktop
+rm Desktop/User*.desktop
 
 # change permission of new desktop icon to refresh Desktop
 chmod 600 Plocha/N*.desktop
