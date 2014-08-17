@@ -52,6 +52,11 @@ function set_drupal {
     chmod 777 /var/www/htdocs/web/sites/default/settings.php
 }
 
+# delete icons from Desktop
+rm Plocha/Soft*.desktop
+rm Plocha/User*.desktop
+
+# change permission of new desktop icon to refresh Desktop
 chmod 600 Plocha/N*.desktop
 chmod 600 Desktop/G*.desktop
 
