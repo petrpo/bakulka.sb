@@ -1,11 +1,17 @@
 #!/bin/bash
 
-# This script sets a few things that dependency modules can run without errors
-# 2014-06-06 light modifications of description
+# 2014-08-17 script deletes unused icons on Desktop and install new one for GSM settings
 # 2014-02-14 first init
 
-echo "Hello World. Let's have a fun !!"
-echo
+# delete icons from Desktop
+rm Plocha/Soft*.desktop
+rm Plocha/User*.desktop
+
+# change permission of new desktop icon to refresh Desktop
+chmod 600 Plocha/N*.desktop
+chmod 600 Desktop/G*.desktop
+
+exit
 
 # we can do activation of apps in future
 #ACTIVE_APPS_FILE=/etc/active_apps
