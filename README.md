@@ -25,9 +25,9 @@ Steps how to prepare Slax custom module
 
 * There are couple of templates in docs directory
 
-* script can set dependencies 
+* this Slax module has dependency modules 
 
-<code> apache, php, mysql (automaticaly brings apr,apr-utils,libaio)</code>
+<code> apache, php, mysql (it brings modules apr,apr-utils,libaio)</code>
 
 * tells Slax where to get sources to build module 
 
