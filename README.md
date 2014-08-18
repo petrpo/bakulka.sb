@@ -5,7 +5,7 @@ Steps how to prepare Slax custom module
 
 ### 1.process - module changes ###
 
-- changes are placed in git repository http://github.com/petrpo/bakulka.sb/
+- changes are documented in git repository http://github.com/petrpo/bakulka.sb/
 
 ### 2.process - module building ###
 
