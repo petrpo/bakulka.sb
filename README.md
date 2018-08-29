@@ -1,4 +1,4 @@
-Custom Slax module (rt-init) README
+Custom Slax module (rt-init) README - not longer maintained. Slax is based on Debian now
 ====================================
 
 Steps how to prepare Slax custom module
